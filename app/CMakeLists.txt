@@ -22,3 +22,4 @@ target_include_directories(ja11_flash PRIVATE
 target_link_libraries(ja11_flash PRIVATE
   hidapi::hidapi
   Qt5::Widgets)
+set_target_properties(ja11_flash PROPERTIES WIN32_EXECUTABLE ON)
