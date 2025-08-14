@@ -8,6 +8,18 @@
     <height>366</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>583</width>
+    <height>366</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>583</width>
+    <height>366</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Boot</string>
   </property>
