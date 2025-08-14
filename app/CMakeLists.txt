@@ -5,6 +5,7 @@ project(JA11Flash LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+find_package(hidapi REQUIRED)
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 qt5_wrap_ui(GENERATED_UI_SRCS
@@ -19,4 +20,5 @@ add_executable(ja11_flash
 target_include_directories(ja11_flash PRIVATE
   ${CMAKE_CURRENT_BINARY_DIR})
 target_link_libraries(ja11_flash PRIVATE
+  hidapi::hidapi
   Qt5::Widgets)

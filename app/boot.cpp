@@ -1,3 +1,5 @@
+#include <hidapi.h>
+
 #include <ui_boot.h>
 
 #include "boot.h"
@@ -7,6 +9,8 @@ Boot::Boot (QWidget *parent)
   , ui (new Ui::Boot)
 {
   ui->setupUi (this);
+
+  hid_init ();
 }
 
 Boot::~Boot ()
